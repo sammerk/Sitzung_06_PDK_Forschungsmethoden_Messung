@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>Vorlesung</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Samuel Merk" />
+    <meta name="date" content="2021-11-23" />
+    <script src="libs/header-attrs-2.11/header-attrs.js"></script>
+    <script src="libs/core-js-2.5.3/shim.min.js"></script>
+    <script src="libs/react-17.0.0/react.min.js"></script>
+    <script src="libs/react-17.0.0/react-dom.min.js"></script>
+    <script src="libs/reactwidget-1.0.0/react-tools.js"></script>
+    <script src="libs/htmlwidgets-1.5.4/htmlwidgets.js"></script>
+    <script src="libs/reactable-binding-0.2.3/reactable.js"></script>
+    <link href="libs/countdown-0.3.5/countdown.css" rel="stylesheet" />
+    <script src="libs/countdown-0.3.5/countdown.js"></script>
+    <link rel="stylesheet" href="xaringan-themer.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+
+class: center,  middle, hide_logo
+
+
+&lt;head&gt;
+&lt;script src="https://kit.fontawesome.com/994a28441d.js" crossorigin="anonymous"&gt;&lt;/script&gt;
+&lt;/head&gt;
+
+&lt;!--&lt;div class="my-footer"&gt;&lt;span&gt;Folien CC-BY verfügbar unter https://atelier-phka-merk-2020.netlify.app&lt;/span&gt;&lt;/div&gt; 
+
+
+&lt;style&gt;
+.remark-slide-number {
+  font-size: 10pt;
+  margin-bottom: -11.6px;
+  margin-right: 10px;
+  color: red; /* white */
+  opacity: 0; /* default: 0.5 */
+}
+&lt;/style&gt;
+--&gt; 
+
+<div>
+<style type="text/css">.xaringan-extra-logo {
+width: 80px;
+height: 128px;
+z-index: 0;
+background-image: url(https://apps.samuel-merk.de/data/PHK_2018_Logo_V1_FARBE_NUR_PH.svg);
+background-size: contain;
+background-repeat: no-repeat;
+position: absolute;
+top:1em;right:1em;
+}
+</style>
+<script>(function () {
+  let tries = 0
+  function addLogo () {
+    if (typeof slideshow === 'undefined') {
+      tries += 1
+      if (tries < 10) {
+        setTimeout(addLogo, 100)
+      }
+    } else {
+      document.querySelectorAll('.remark-slide-content:not(.title-slide):not(.inverse):not(.hide_logo)')
+        .forEach(function (slide) {
+          const logo = document.createElement('div')
+          logo.classList = 'xaringan-extra-logo'
+          logo.href = null
+          slide.appendChild(logo)
+        })
+    }
+  }
+  document.addEventListener('DOMContentLoaded', addLogo)
+})()</script>
+</div>
+
+
+.phg[
+# Vorlesung:
+
+&lt;i class="fas fa-microscope fa-6x"&gt;&lt;/i&gt;
+
+### Forschungsmethoden
+---  
+.em14[André Epp &amp; Samuel Merk | PH Karlsruhe]]  
+
+
+
+---
+# Advanced Organizer
+.em13[
+* Was ist eine Messung?
+* Typologien von Variablen
+     * Inferenzniveau
+     * Theoretischer Kausalzusammenhang
+     * Skalenniveaus
+* Gütekriterien einer Messung 
+* Erhebungsverfahren
+    * Beobachtung
+    *	Interview
+    * Fragebogen
+    * (Psychologischer) Test
+    * Physiologische Messungen
+    * Dokumentenanalyse
+* Vertiefung: Fragebogendesign
+
+
+]
+
+
+---
+class: inverse, center, middle
+
+# Was ist eine Messung? &lt;br&gt; (Theorie der Datenerhebung)
+
+---
+
+## Warum Theorie zur Datenqualität?
+&gt; Datenqualität (DQ) stellt eine __notwendige Bedingung__ der internen und externen Validität dar.
+
+&amp;nbsp;  
+
+--
+
+`$$\neg \text{ hohe Datenqualität} \Rightarrow \neg  \text{ interne/externe Validität}\\
+\text{bzw.}\\
+\text{interne/externe Validität} \Rightarrow \text{hohe Datenqualität}$$`
+
+
+
+
+---
+# Daten erheben = Variablen messen
+&gt;  Eine Messung („measurement“) meint in der quantitativen Sozialforschung eine Zuordnung von Zahlen zu Objekten oder Ereignissen, sofern diese Zuordnung eine homomorphe (strukturerhaltende) Abbildung eines empirischen Relativs in ein numerisches Relativ ist .cit[(Orth, 1983; S. 138)].
+
+
+---
+# Daten erheben = Variablen messen
+&gt;  Eine Messung („measurement“) meint in der quantitativen Sozialforschung eine Zuordnung von Zahlen zu Objekten oder Ereignissen, sofern diese Zuordnung eine homomorphe (strukturerhaltende) Abbildung eines empirischen Relativs in ein numerisches Relativ ist .cit[(Orth, 1983; S. 138)].
+
+---
+class: inverse, center, middle
+
+# Typologie Variablen
+
+---
+## Typologie I: Skalenniveaus
+&amp;nbsp;  
+&gt; Das Skalenniveau einer Variable beschreibt, welche Relationen im numerischen Relativ sinnvoll sind .cit[(Döring &amp; Bortz, 2016)].  
+
+&amp;nbsp;  
+<div id="htmlwidget-23be1bafa3d26eb032d1" class="reactable html-widget" style="width:900px;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-23be1bafa3d26eb032d1">{"x":{"tag":{"name":"Reactable","attribs":{"data":{"Skalenniveau":["Nominalskala","Ordinalskala","Intervallskala"],"Sinnvolle Relationen":["Gleichheit","Gleichheit + Ordnung","Gleichheit + Ordnung + Abstand"],"Beispiel":["Lieblingsfach","Grundschulempfehlung","tägl. Internetnutzung"]},"columns":[{"accessor":"Skalenniveau","name":"Skalenniveau","type":"character","align":"center"},{"accessor":"Sinnvolle Relationen","name":"Sinnvolle Relationen","type":"character","align":"center"},{"accessor":"Beispiel","name":"Beispiel","type":"character","align":"center"}],"resizable":true,"defaultPageSize":10,"showPageSizeOptions":true,"pageSizeOptions":[10,25,50,100],"paginationType":"numbers","showPageInfo":true,"minRows":1,"highlight":true,"borderless":true,"nowrap":true,"width":"900px","theme":{"color":"hsl(233, 9%, 87%)","backgroundColor":"#a51e4100","borderColor":"#ffffff","stripedColor":"hsl(233, 12%, 22%)","highlightColor":"hsl(233, 12%, 24%)","inputStyle":{"backgroundColor":"hsl(233, 9%, 25%)"},"selectStyle":{"backgroundColor":"hsl(233, 9%, 25%)"},"pageButtonHoverStyle":{"backgroundColor":"hsl(233, 9%, 25%)"},"pageButtonActiveStyle":{"backgroundColor":"hsl(233, 9%, 28%)"}},"dataKey":"d1aa6bf0071baf44879be4a0e7575d2b","key":"d1aa6bf0071baf44879be4a0e7575d2b"},"children":[]},"class":"reactR_markup"},"evals":[],"jsHooks":[]}</script>
+
+---
+## Typologie I: Skalenniveaus
+&amp;nbsp;  
+&gt; Das Skalenniveau einer Variable beschreibt, welche Relationen im numerischen Relativ sinnvoll sind .cit[(Döring &amp; Bortz, 2016)].  
+
+&amp;nbsp;  
+<div id="htmlwidget-68a09b682ad24443cbab" class="reactable html-widget" style="width:800px;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-68a09b682ad24443cbab">{"x":{"tag":{"name":"Reactable","attribs":{"data":{"Schüler*in":["Kai","Aise","Petra"],"Lieblingsfach":[1,2,1],"tägl. Internetnutzung":[20,90,110]},"columns":[{"accessor":"Schüler*in","name":"Schüler*in","type":"character","align":"center"},{"accessor":"Lieblingsfach","name":"Lieblingsfach","type":"numeric","align":"center"},{"accessor":"tägl. Internetnutzung","name":"tägl. Internetnutzung","type":"numeric","align":"center"}],"resizable":true,"defaultPageSize":10,"showPageSizeOptions":true,"pageSizeOptions":[10,25,50,100],"paginationType":"numbers","showPageInfo":true,"minRows":1,"highlight":true,"borderless":true,"nowrap":true,"width":"800px","theme":{"color":"hsl(233, 9%, 87%)","backgroundColor":"#a51e4100","borderColor":"#ffffff","stripedColor":"hsl(233, 12%, 22%)","highlightColor":"hsl(233, 12%, 24%)","inputStyle":{"backgroundColor":"hsl(233, 9%, 25%)"},"selectStyle":{"backgroundColor":"hsl(233, 9%, 25%)"},"pageButtonHoverStyle":{"backgroundColor":"hsl(233, 9%, 25%)"},"pageButtonActiveStyle":{"backgroundColor":"hsl(233, 9%, 28%)"}},"dataKey":"e838119d84fd8fb586aa65112b957964","key":"e838119d84fd8fb586aa65112b957964"},"children":[]},"class":"reactR_markup"},"evals":[],"jsHooks":[]}</script>
+
+--
+
+&lt;br&gt;&lt;br&gt;&lt;br&gt;
+
+.phg[AA: Überlegen Sie sich je eine Operationalisierung für jedes Skalenniveau die per Fragebogen »Cannabis-Konsum« erfasst]
+
+
+<div class="countdown" id="timer_619d4f27" style="right:0;bottom:0;" data-warnwhen="0">
+<code class="countdown-time"><span class="countdown-digits minutes">03</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
+</div>
+
+---
+## Typologie Variablen II: Inferenzniveau
+&gt; Das Inferenzniveau einer Variable beschreibt in welchem Ausmaß bei einer Messung geschlussfolgert/abstrahiert wird.
+
+--
+.pull-left[
+### Niedriginferente Variablen
+* Sind mehr oder weniger direkt beobachtbar
+* Werden durch "Kodierungen" generiert
+* Beispiel: _"Anzahl der Fehltage einer Schülerin"_]
+--
+.pull-right[
+### Hochinferente Variablen
+* Sind nicht direkt beobachtbar
+* Werden durch "Ratings" generiert
+* Beispiel: _"Kognitive Aktivierung"_
+]
+
+--
+
+&lt;br&gt;
+
+.phg[AA: Überlegen Sie sich je eine hoch- bzw. niedriginferente Variable für das Themengebiet »Engagement für Fridays for Future«]
+
+
+<div class="countdown" id="timer_619d4c2d" style="right:0;bottom:0;" data-warnwhen="0">
+<code class="countdown-time"><span class="countdown-digits minutes">04</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
+</div>
+
+---
+## Typologie  III: __Theo. Kausalzusammenhang__
+### Beispiel: 
+.em09[
+<div id="htmlwidget-6b23e864b12a70129e24" class="reactable html-widget" style="width:auto;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-6b23e864b12a70129e24">{"x":{"tag":{"name":"Reactable","attribs":{"data":{"Schüler*in":["1","2","3","4","5","..."],"Spielt Counterstrike (SC)":["0","1","1","0","0","..."],"Schlägt Mitschüler*innen (SM)":["0","1","1","0","0","..."],"Hat aggres. Gedanken (AG)":["0","1","1","1","0","..."],"Alter (AL)":["12","19","6","15","6","..."]},"columns":[{"accessor":"Schüler*in","name":"Schüler*in","type":"character","align":"center","maxWidth":130},{"accessor":"Spielt Counterstrike (SC)","name":"Spielt Counterstrike (SC)","type":"character","align":"center"},{"accessor":"Schlägt Mitschüler*innen (SM)","name":"Schlägt Mitschüler*innen (SM)","type":"character","align":"center"},{"accessor":"Hat aggres. Gedanken (AG)","name":"Hat aggres. Gedanken (AG)","type":"character","align":"center"},{"accessor":"Alter (AL)","name":"Alter (AL)","type":"character","align":"center","maxWidth":130}],"resizable":true,"defaultPageSize":10,"showPageSizeOptions":true,"pageSizeOptions":[10,25,50,100],"paginationType":"numbers","showPageInfo":true,"minRows":1,"highlight":true,"borderless":true,"nowrap":true,"theme":{"color":"hsl(233, 9%, 87%)","backgroundColor":"#a51e4100","borderColor":"#ffffff","stripedColor":"hsl(233, 12%, 22%)","highlightColor":"hsl(233, 12%, 24%)","inputStyle":{"backgroundColor":"hsl(233, 9%, 25%)"},"selectStyle":{"backgroundColor":"hsl(233, 9%, 25%)"},"pageButtonHoverStyle":{"backgroundColor":"hsl(233, 9%, 25%)"},"pageButtonActiveStyle":{"backgroundColor":"hsl(233, 9%, 28%)"}},"dataKey":"81321e9a4c2d837edf92aa741825c826","key":"81321e9a4c2d837edf92aa741825c826"},"children":[]},"class":"reactR_markup"},"evals":[],"jsHooks":[]}</script>
+]
+
+.phg[AA: Formulieren Sie natürlichsprachig einen Kausalzusammenhang zwischen drei Variablen und lassen Sie den Sitznachbarn bzw. die Sitznachbarin AV, UV, Mo, Me ect. identifizieren]
+
+
+<div class="countdown" id="timer_619d4cea" style="right:0;bottom:0;" data-warnwhen="0">
+<code class="countdown-time"><span class="countdown-digits minutes">08</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
+</div>
+
+
+---
+## Unabhängigkeit (Orthog.) der Typologien 
+&amp;nbsp;  
+&amp;nbsp;  
+&amp;nbsp;  
+&lt;img src="img/ortho_klass.png" width="70%" style="display: block; margin: auto;" /&gt;
+
+
+---
+class: inverse, center, middle
+
+# Gütekriterien einer Messung
+
+---
+## Objektivität 
+
+.em09[
+####  Durchführungsobjektivität
+&gt; _"Unabhängigkeit des Testergebnisses von der Person, die den Test mit der Testperson durchführt"_  
+
+####  Auswertungsobjektivität
+&gt; _"Unabhängigkeit des Testergebnisses von der Person, die den Test auswertet"_
+
+####  Interpretationsobjektivität
+&gt; _"Unabhängigkeit des Testergebnisses von der Person, die den Testwert interpretiert"_ .cit[(Döring &amp; Bortz, 2016)]
+]
+
+
+---
+# Reliabilität
+&gt; Reliabilität ist Ausmaß an Messfehlerfreiheit
+
+--
+
+#### Beispiel: Erfassung mithilfe einer Skala
+&lt;img src="img/km_tabelle_rel.png" width="70%" style="display: block; margin: auto;" /&gt;
+
+
+---
+## Validität
+####  Kriteriumsvalidität
+&gt; _"Ein Test weist Kriteriumsvalidität auf, wenn vom Verhalten der Testperson innerhalb der Testsituation erfolgreich auf ein »Kriterium«, nämlich auf ein Verhalten außerhalb der Testsituation, geschlossen werden kann."_ .cit[(Moosbrugger &amp; Kelava, 2012)]  
+
+####  Konstruktvalidität
+&gt; Das Ausmaß der theoretischen und empirischen Belege für die Angemessenheit der Interpretation von Testwerten. .cit[(Cronbach &amp; Meehl, 1955)]
+
+
+
+---
+class: inverse, center, middle
+
+# Ausgewählte Erhebungsverfahren &lt;br&gt;(Praxis der Datenerhebung)
+
+---
+# Beobachtung
+
+&gt; Wissenschaftliche Beobachtung ist die systematische und regelgeleitete Registrierung des Auftretens bzw. der Ausprägung von ausgewählten, psychologisch relevanten Merkmalen oder Ereignissen. Sie folgt einem zuvor festgelegten Beobachtungsplan, der festlegt,
+1. was beobachtet werden soll (Kategorien für das/die interessierende/n Ereignis/ se oder Merkmal/e);
+2. welche Aspekte weniger oder nicht relevant sind;
+3. welchen Interpretationsspielraum der Beobachtende bei der Beobachtung hat;
+4. wann, wie lange und wo die Beobachtung erfolgt (Zeitpunkte, Zeiträume, Situationen);
+5. auf welche Weise das Beobachtete registriert und protokolliert wird. .cit[(Hussy et al., 2013)] 
+
+--
+
+.pull-left[### Zentrale Vorteile
+* Potentielle Vermeidung von .pgl[Reaktanz]
+* Teilw. höhere Reliabilität]
+
+.pull-right[### Zentrale Nachteile
+* Oft nicht ökonomisch
+* Kognitive und psychische Variablen oft nur schwierig zugänglich]
+
+---
+class: hide_logo
+## Selbstauskunft: Interview, Fragebögen, Tests
+
+--
+
+.pull-left[### Zentrale Vorteile
+* Kognitive und psychische Variablen u.U. zugänglich
+* u.U. sehr ökonomisch]
+
+.pull-right[### Zentrale Nachteile
+* Reaktanz oft höher
+* Entwicklung von Fragebögen oft sehr aufwändig]
+
+
+---
+# Physiologische Messungen
+
+---
+# Dokumentenanalyse
+
+---
+# Vertiefung: Fragebogendesign
+
+---
+# Fragebogendesign: Begriffe
+* Item := Einzelfrage
+* Skala := Mehrerer Items die Operationalisierungen einer Varablen darstellen
+* Rating-Item := Item das intervallskaliert ist
+* Likert-Item := Items deren Stamm eine Aussage darstellt und deren Antwortmöglichkeit die abgestufte Zustimmungen zu dieser Aussage enthalten
+* Offenes Item := Item bei dem die Antwortmöglichkeitn nicht vorgegeben sind
+* Mittelkategorie := Antwortmöglichkeit die äquidistant zu den beiden Polen ist
+* Unipolares Item := Item das geringe bis starke Ausprägungen eines einzigen Merkmals umfasst (z.B. »ruhig« bis »unruhig«)
+* Pipolares Item := Item das von einem Pol bis zu einem anderen Pol formuliert ist (z.B. »ruhig« bis »viel Lärm«). 
+
+---
+# Fragebogendesign: Faustregeln
+
+* Verwenden Sie unbedingt nach Möglichkeit etablierte (also von Wissenschaftler\*innen validierte) Items und Skalen. Dies wird umso wichtiger je höherinferent ihre Variable ist.
+* Formulieren Sie Items so, dass sie das möglichst hohe Skalenniveau erhalten (statt »Rauchen Sie?«, »Wie viele Zigaretten rauchen Sie durchschnittlich pro Tag?«)
+* Vermeiden Sie mehrdimensionale Interpretationsmöglichkeiten (typisch bei und/oder Verknüpfungen z.B. »Ich fahre sehr gerne und sehr schnell Auto«)
+* Vermeiden Sie (doppelte) Verneinungen (z.B. »Ich bin nicht oft unglücklich«)
+* Implementieren Sie Qualitätschecks (z.B. sog. Items mit sicherer Antwort im gleichen Antwortformat wie die vorherigen Items »Ich bin noch nie im Leben zu spät gekommen«)
+* Planen Sie für jedes Item eine Auswertungsstrategie bevor Sie die Daten erheben. 
+
+
+---
+## Vertiefung: Impliziter Assoziationstest
+Machen Sie sich unter http://bit.ly/merk004 (Lexikonartikel) oder http://bit.ly/merk005 (Wikipediaartikel) mit dem impliziten Assoziationstest vertraut. Beantworten Sie danach Fragen dazu unter http://bit.ly/merk015
+
+&lt;div class="figure" style="text-align: center"&gt;
+&lt;img src="img/Iat.gif" alt="Illustration auf Wikipedia.&amp;lt;br&amp;gt;Die grünen Wörter stehen für die Belegung der Reaktionstasten." width="30%" /&gt;
+&lt;p class="caption"&gt;Illustration auf Wikipedia.&lt;br&gt;Die grünen Wörter stehen für die Belegung der Reaktionstasten.&lt;/p&gt;
+&lt;/div&gt;
+
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false,
+"ratio": "16:9",
+"navigation": {
+"scroll": false,
+"click": false,
+"touch": true
+}
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
