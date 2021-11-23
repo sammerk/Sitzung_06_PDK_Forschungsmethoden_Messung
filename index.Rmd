@@ -94,7 +94,7 @@ extra_css <- list(
   ".hscroll-box-30" = list("width" ="23em",
                            "overflow-x" = "scroll"))
 
-style_mono_accent(
+style_mono_accent_inverse(
   base_color = "#8cd000",
   white_color = "#FFFFFF",
   black_color = "#272822",
@@ -187,7 +187,7 @@ class: inverse, center, middle
 library(tidyverse)
 library(reactable)
 options(reactable.theme = reactableTheme(
-  color = "hsl(233, 9%, 87%)",
+  color = "#8cd000",
   backgroundColor = "#a51e4100",
   borderColor = "#ffffff",
   stripedColor = "hsl(233, 12%, 22%)",
@@ -240,7 +240,7 @@ reactable(
 
 <br><br><br>
 
-.phg[AA: Überlegen Sie sich je eine Operationalisierung für jedes Skalenniveau die per Fragebogen »Cannabis-Konsum« erfasst]
+.phg[AA: Überlegen Sie sich je eine Operationalisierung für jedes Skalenniveau<br>die per Fragebogen »Cannabis-Konsum« erfasst]
 
 
 ```{r, echo = F}
@@ -305,9 +305,6 @@ reactable(
 )
 ```
 ]
-
-.phg[AA: Formulieren Sie natürlichsprachig einen Kausalzusammenhang zwischen drei Variablen und lassen Sie den Sitznachbarn bzw. die Sitznachbarin AV, UV, Mo, Me ect. identifizieren]
-
 
 ```{r, echo = F}
 library(countdown)
