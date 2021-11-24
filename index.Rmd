@@ -122,7 +122,7 @@ use_logo(
 
 ---
 # Advanced Organizer
-.em13[
+.em11[
 * Was ist eine Messung?
 * Typologien von Variablen
      * Inferenzniveau
