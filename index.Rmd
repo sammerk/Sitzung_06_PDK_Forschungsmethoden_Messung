@@ -311,6 +311,13 @@ library(countdown)
 countdown(minutes = 8, seconds = 00, color_running_text = "#8cd000")
 ```
 
+---
+## Typologie  III: __Theo. Kausalzusammenhang__
+
+* _Abhängige Variablen_ sind Variablen die beeinflusst werden
+* _Unabhängige Variablen_ sind Variablen die beeinflussen
+* _Mediatorvariablen_ sind Variablen die beeinflussen und beeinflusst werden
+* _Moderatorvariablen_ sind Variablen die Einflüsse beeinflussen
 
 ---
 ## Unabhängigkeit (Orthog.) der Typologien 
